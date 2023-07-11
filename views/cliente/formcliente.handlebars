@@ -1,0 +1,67 @@
+<h2>Cliente</h2>
+<hr>
+
+<form action="/clientes/save" method="post">
+
+    <input type="hidden" name="id" 
+    value="{{cliente.id}}">
+
+    <div class="form-group">
+        <label for="txtnome">Nome</label>
+        <input type="text" value="{{cliente.nome}}"
+            class="form-control"
+            id="txtnome" name="nome" required>
+    </div>
+    <div class="form-group">
+        <label for="txtendereco">Endereço</label>
+        <input type="text" value="{{cliente.endereco}}"
+            class="form-control"
+            id="txtendereco" name="endereco">
+    </div>
+    <div class="form-group">
+        <label for="txtsexo">Sexo</label>
+        <input type="text"  value="{{cliente.sexo}}"
+            class="form-control"
+            id="txtsexo" name="sexo">
+    </div>
+    <div class="form-group">
+        <label for="txttelefone">Telefone</label>
+        <input type="text" value="{{cliente.telefone}}"
+            class="form-control"
+            id="txttelefone" name="telefone">
+    </div>
+
+    <div class="form-group">
+        <label for="txtanime">Anime</label>
+        <input type="text" value="{{cliente.anime}}"
+            class="form-control"
+            id="txtanime" name="anime">
+    </div>
+
+
+    <div class="form-group">
+        <label for="txtpersonagem">Personagem</label>
+        <input type="text" value="{{cliente.personagem}}"
+            class="form-control"
+            id="txtpersonagem" name="personagem">
+    </div>
+    <div class="form-group">
+        <label for="txtinstagram">Instagram</label>
+        <input type="text" value="{{cliente.instagram}}"
+            class="form-control"
+            id="txtinstagram" name="instagram">
+    </div>
+    <div class="form-group">
+        <label for="txtemail">Email</label>
+        <input type="text" value="{{cliente.email}}"
+            class="form-control"
+            id="txtemail" name="email">
+    </div>
+
+
+
+
+    <button type="submit" 
+        class="btn btn-primary">Enviar</button>
+
+</form>
